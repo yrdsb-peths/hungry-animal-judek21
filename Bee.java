@@ -14,12 +14,24 @@ public class Bee extends Actor
      */
     public void act()
     {
+        if(Greenfoot.isKeyDown("d"))
+        {
+            turn(3);
+        }
         if(Greenfoot.isKeyDown("a"))
         {
-            move(1);
-            turn(1);
+            turn(-3);
+        }
+        if(Greenfoot.isKeyDown("w"))
+        {
+            move(2);
+        }
+        if(Greenfoot.isKeyDown("s"))
+        {
+            move(-1);
         }
         move(1);
+        
         
     }
 }
