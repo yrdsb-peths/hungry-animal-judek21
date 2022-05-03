@@ -19,7 +19,10 @@ public class MyWorld extends World
         super(600, 400, 1); 
         Bee a = new Bee();
         addObject(a, 200, 200);
-        prepare();
+        Flower b = new Flower();
+        addObject(b, 300, 0);
+        Flower c = new Flower();
+        addObject(c, 100, 0);
     }
     /**
      * Prepare the world for the start of the program.

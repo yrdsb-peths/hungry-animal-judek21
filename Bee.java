@@ -14,6 +14,7 @@ public class Bee extends Actor
      */
     public void act()
     {
+        
         if(Greenfoot.isKeyDown("d"))
         {
             turn(3);
@@ -30,6 +31,9 @@ public class Bee extends Actor
         {
             move(-1);
         }
+
+        
+        
         move(1);
         
         
