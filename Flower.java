@@ -14,6 +14,6 @@ public class Flower extends Actor
     }
     public void act()
     {
-        move(1);
+        setLocation(getX(), getY() +1);
     }
 }

@@ -31,11 +31,20 @@ public class Bee extends Actor
         {
             move(-1);
         }
-
-        
-        
         move(1);
-        
+        nectar();
         
     }
+        public void nectar()
+        {
+            if(isTouching(Flower.class))
+            {
+            removeTouching(Flower.class);
+            MyWorld world = (MyWorld) getWorld();
+            world.makeFlower();
+        }
+            
+            
+        }
+    
 }
